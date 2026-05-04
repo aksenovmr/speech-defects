@@ -1,0 +1,27 @@
+paths:
+  checkpoint_path: checkpoints/wavlm_base_unfreeze4_seed42.pt
+  hf_repo_id: aksenovmr/wavlm_base_unfreeze4_speech_defects
+  hf_filename: wavlm_base_unfreeze4_seed42.pt
+
+model:
+  encoder_name: microsoft/wavlm-base
+  model_version: wavlm_base_unfreeze4_seed42
+
+api:
+  host: 127.0.0.1
+  port: 8000
+  reload: true
+
+streamlit:
+  api_url: http://127.0.0.1:8000
+
+fallbacks:
+  thr_bad: 0.25
+  thr_sound: 0.25
+
+ui:
+  thr_bad_bad_min: 0.45
+  thr_sound_clear_min: 0.35
+
+storage:
+  db_path: artifacts/predictions.db

@@ -1,0 +1,39 @@
+experiment:
+  name: wav2vec2_base_unfreeze4_seed42
+
+paths:
+  good_dir: data/raw/хорошо
+  bad_dir: data/raw/плохо
+  checkpoint_path: checkpoints/wav2vec2_base_unfreeze4_seed42.pt
+
+data:
+  sr: 16000
+  max_seconds: 10.0
+  test_size: 0.2
+  val_size_from_train: 0.2
+  random_state: 42
+  num_workers: 0
+
+model:
+  encoder_name: "facebook/wav2vec2-base"
+  freeze_mode: unfreeze_last_n
+  unfreeze_last_n: 4
+
+training:
+  batch_size: 16
+  lr_head: 0.0003
+  lr_encoder: 0.00001
+  weight_decay: 0.01
+  num_epochs: 12
+  lambda_sparse: 0.0
+  grad_clip: 1.0
+
+thresholds:
+  default_bad: 0.5
+  screening_bad: 0.2
+  fallback_sound: 0.25
+  sound_quantile: 0.9
+
+wandb:
+  use: true
+  project: speech-defects-experiments
