@@ -36,4 +36,4 @@ thresholds:
 
 wandb:
   use: true
-  project: speech-defects-experiments
+  project: speech-defects-final
