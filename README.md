@@ -31,7 +31,7 @@ speech-defects/
 
 Чекпоинт: [aksenovmr/wavlm_base_unfreeze4_speech_defects](https://huggingface.co/aksenovmr/wavlm_base_unfreeze4_speech_defects)
 
-Обучение основной модели, а также бейзлайн-модели и прочих экспериментов, логировалось в Wandb. Составленныый отчет доступен по ссылке: [wandb_report](https://api.wandb.ai/links/aksenovmr-hse-university/4uv8lnzh)
+Обучение основной модели, а также бейзлайн-модели и прочих экспериментов, логировалось в Wandb. Составленныый отчет доступен по ссылке: [wandb_report](https://api.wandb.ai/links/aksenovmr-hse-university/bf7x07gy)
 
 ## Архитектура сервиса
 
