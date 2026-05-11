@@ -10,7 +10,7 @@ speech-defects/
 ├── api/                    # FastAPI-сервер
 ├── configs/                # YAML-конфиги инференса и обучения
 ├── demo/                   # Streamlit веб-интерфейс
-├── notebooks/              # Jupyter-ноутбук с baseline-решениями и экспериментами
+├── notebooks/              # Jupyter-ноутбуки с baseline-решениями и экспериментами, а также с анализом ошибок модели.
 ├── scripts/                # Скрипт обучения
 ├── src/
 │   ├── data/               # Датасет, даталоадеры
